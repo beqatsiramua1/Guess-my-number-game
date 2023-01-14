@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /** ROOT FONT SIZE - 10px **/
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #222;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Rowdies', cursive;
+}
+
+header {
+    height: 35vh;
+    border-bottom: .8rem solid #fff;
+    position: relative;
+    padding: 1rem;
+}
+
+.header-top-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    width: 15rem;
+    height: 6rem;
+    font-size: 2.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Rowdies', cursive;
+}
+
+.number-range {
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    font-weight: bold;
+}
+
+.game-name-content {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.game-name-content .game-name {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.secret-number-cont {
+    width: 10rem;
+    height: 10rem;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secret-number-cont .secret-number {
+    color: #000;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+footer {
+    height: calc(100vh - 35vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div {
+    margin: 0 10rem;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-left-input {
+    margin-bottom: 1rem;
+}
+
+.footer-left-input input.user-input{
+    width: 18rem;
+    height: 8rem;
+    text-align: center;
+    font-size: 4rem;
+    border: .4rem solid #fff;
+    background-color: transparent;
+    color: #fff;
+}
+
+.footer-left-input input.user-input:focus,
+.footer-left-input input.user-input:active {
+    outline: none;
+}
+
+
+.footer-right > p {
+    font-size: 2.3rem;
+    margin: 1rem 0;
+}
